@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">InflictTask</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="APP_KEY">n6m451ojxn8afqk</string>
+</resources>

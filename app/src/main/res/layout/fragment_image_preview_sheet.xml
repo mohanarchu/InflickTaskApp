@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ImagePreviewSheet">
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+
+
+    </ImageView>
+
+
+    <LinearLayout
+        android:layout_below="@id/image"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
+                android:id="@+id/card_cancel"
+                app:cardBackgroundColor="#808080"
+                android:layout_margin="10sp"
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="6dp"
+                android:id="@+id/card_upload"
+                app:cardBackgroundColor="@color/teal_200"
+                android:layout_margin="10sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="Upload"
+                    android:textSize="18dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
